@@ -1,10 +1,56 @@
 
+# Music Player App - Android Internship Assignment
+
+A modern music player app built with **Kotlin** and **Jetpack Compose**, demonstrating Android development best practices with MVVM architecture, API integration, and audio playback capabilities.
+
+---
+
+## 🚀 How to Run the App
+
+### Method 1: Android Studio (Recommended)
+1. **Open the project**:
+   - Launch Android Studio
+   - Click `File → Open`
+   - Navigate to the `MusicPlayerApp` folder
+   - Click `OK`
+
+2. **Wait for Gradle sync** (first time takes 2-5 minutes)
+
+3. **Run the app**:
+   - Connect an Android device (with USB debugging enabled) OR start an emulator
+   - Click the green **Run** button ▶️ (or press `Shift + F10`)
+   - Select your device/emulator
+   - The app will build, install, and launch automatically
+
+### Method 2: Build APK via Command Line
+```bash
+# Navigate to project directory
+cd MusicPlayerApp
+
+# Build debug APK (Windows)
+gradlew.bat assembleDebug
+
+# Install on connected device
+adb install app\build\outputs\apk\debug\app-debug.apk
+```
+
+### Method 3: Quick Build Script (Windows)
+- **Double-click** `build-and-run.bat` in the project folder
+- Wait for build completion
+- APK will be created at: `app\build\outputs\apk\debug\app-debug.apk`
+
+### APK Location
+After building, find the APK at:
+```
+app\build\outputs\apk\debug\app-debug.apk
+```
+
 ---
 
 ## 🎧 API Used: Jamendo
 
 **Endpoint:**  
-https://api.jamendo.com/v3.0/tracks/
+`https://api.jamendo.com/v3.0/tracks/`
 
 ### ✔ Why Jamendo?
 - Full-length MP3 audio URLs
